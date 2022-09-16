@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS GOOGLE LATO-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!--ICONES IONIC-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <!--STYLE CSS-->
+    <link rel="stylesheet" href="/style.css">
+    <title>Dé à deux</title>
+</head>
+<body>
+    <div class="container">
+        <!--JOUEUR 1-->
+        <section class="player player--0 player--active">
+            <div class="tscore">
+                <h2>
+                    <!--POINTS GLOBAL JOUEUR 1-->
+                    <span class="pl">Player 1</span>
+                </h2>
+                <p class="score" id="score--0">43</p>
+            </div>
+            <div class="current">
+                <!--POINTS COURANTS JOUEUR 2-->
+                <p class="current-label">Points</p>
+                <p class="current-score" id="current--0">0</p>
+            </div>
+        </section>
+        <!--JOUEUR 2-->
+        <section class="player player--1">
+            <div class="tscore">
+                <h2 class="name" id="name--1">
+                    <span class="pl">Player 2</span>
+                </h2>
+                <!--POINTS GLOBAL JOUEUR 2-->
+                <p class="score" id="score--1">24</p>
+            </div>
+            <div class="current">
+                <!--POINTS COURANTS JOUEUR 2-->
+                <p class="current-label">Points</p>
+                <p class="current-score" id="current--1">0</p>
+            </div>
+        </section>
+        <section>
+            <img src="/img/dice-6.png" alt="Playing dice" class="dice"/>
+        </section>
+        <!--BOUTON NOUVELLE PARTIE-->
+        <button class="btn btn--new">
+            <ion-icon class="btnRed" ios="ios-add-circle" md="md-add-circle-outline"></ion-icon>
+            Nouvelle partie</button>
+        <!--BOUTON LANCER-->
+        <button class="btn btn--roll">
+            <ion-icon class="btnRed" ios="ios-sync" md="md-sync"></ion-icon>
+            Roll</button>
+        <!--BOUTON HOLD-->
+        <button class="btn btn--hold">
+            <ion-icon class="btnRed" name="download"></ion-icon>
+            Hold</button>
+        <!--FOOTER-->
+        <div id="footer">
+            <p>- Thatiane BONNARDEL de Studi - <a href="https://github.com/Thatyc" target="_blank"><ion-icon class="btnRed" name="logo-github"></ion-icon></a>
+        </p>
+        </div>
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="/main.js"></script>
+</body>
+</html>

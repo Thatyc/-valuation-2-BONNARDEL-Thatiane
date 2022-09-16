@@ -1,0 +1,175 @@
+/* GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(231, 234, 231);
+    overflow: hidden;
+    display: flex;
+}
+  
+.player {
+    flex: 50%;
+    padding: 11%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+}
+  
+.pl {
+    color: #5a5a5a;
+    font-size: 3rem;
+}
+  
+.tscore {
+    width: 65%;
+    padding: 1.9rem;
+    text-align: center;
+    transition: all 0.75s;
+}
+  
+.score {
+    font-size: 4rem;
+    color: #df0f4a;
+    margin-bottom: auto;
+    padding-top: 10px;
+}
+  
+.player--active {
+    background-color: rgb(203, 201, 201);
+}
+  
+.player--active .current {
+    opacity: 1;
+}
+  
+.current {
+    margin-top: 10rem;
+    background-color: #df0f4a;
+    border-radius: 9px;
+    width: 55%;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.75s;
+}
+  
+.current-label {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+}
+  
+.current-score {
+    font-size: 3rem;
+    color: white;
+}
+  
+.btn {
+    position: absolute;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    color: #5a5a5a;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+  
+.btn--new {
+    top: 0.5rem;
+}
+  
+.btn--roll {
+    top: 35rem;
+}
+  
+.btn--hold {
+    top: 40rem;
+}
+
+.btnRed {
+    color: #df0f4a;
+}
+  
+.dice {
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    box-shadow: 2px 4px 10px #5a5a5a;
+}
+  
+.player--winner {
+    background-color: #d57898;
+}
+  
+.player--winner .name {
+    font-weight: 700;
+    color: #df0f4a;
+}
+  
+
+#footer {
+    position: absolute;
+    left: 40%;
+    bottom: 2rem;
+}
+.hidden {
+    display: none;
+}
+/* RESPONSIVE PORTABLE !!!! */
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .dice {
+        height: 2rem;
+        width: 2rem;
+        top: 32rem;
+        left: 80rem;
+    }
+    .btn--roll {
+        height: 2rem;
+        width: 2rem;
+        top: 32rem;
+    }
+    .btn--hold {
+        height: 2rem;
+        width: 2rem;
+        top: 35rem;
+    }
+    #footer {
+        font-size: 1rem;
+        left: 2rem;
+        bottom: 0;
+    }
+    .current-label {
+        font-size: 1rem;
+    }
+    .current {
+        text-align: center;
+        margin: 2rem;
+    }
+}
+
