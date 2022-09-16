@@ -52,7 +52,7 @@ btnRoll.addEventListener('click', function () {
       diceEl.src = "img/" + "dice-" + dice + ".png";
       // SI LE DÉ TOMBE NE TOMBE PAS SUR 1
       if (dice !== 1) {
-        // AJOUT DANS LE GLOBAL
+        // AJOUT DANS LES POINTS COURANTS
         currentScore += dice;
         document.getElementById(`current--${activePlayer}`).textContent = currentScore;
       } else {
